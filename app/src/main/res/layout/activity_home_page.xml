@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbar_layout"
+                    layout="@layout/toolbar_layout" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/bottomNavigation"
+                    android:layout_below="@+id/toolbar_layout"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/auto_complete_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawableTint="@color/grey_500"
+                        android:hint="Type Product Name"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                    <FrameLayout
+                        android:id="@+id/content_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.BottomNavigationView
+                    android:id="@+id/bottomNavigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:layout_alignParentBottom="true"
+                    android:animateLayoutChanges="false"
+                    android:background="@color/gray_1"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_navigation" />
+
+
+
+
+            </RelativeLayout>
+
+
+        <include
+            android:id="@+id/nav_drawer"
+            layout="@layout/navigation_layout"/>
+
+
+    </android.support.v4.widget.DrawerLayout>
+</layout>

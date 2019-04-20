@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/product"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/submitted"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Grand Total"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/accepted"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/nextwrs"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Invertor Battery"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/rejected"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="HKVA"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+        <!--<TextView
+            android:id="@+id/tvStabilizer"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="HKVA"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />-->
+
+
+    </LinearLayout>
+
+</layout>

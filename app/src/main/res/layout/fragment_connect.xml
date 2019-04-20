@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/scan" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="180dp">-->
+
+                <!--<FrameLayout-->
+                <!--android:id="@+id/ll_background"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/viewpager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<com.viewpagerindicator.CirclePageIndicator-->
+                <!--android:id="@+id/indicator"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fillColor="@color/divider_blue"-->
+                <!--app:pageColor="@color/white"-->
+                <!--app:radius="4dp"-->
+                <!--app:strokeWidth="1dp" />-->
+                <!--</FrameLayout>-->
+                <!--</FrameLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/blue">-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/imageRecyclerView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--app:layoutManager="android.support.v7.widget.LinearLayoutManager"-->
+                <!--tools:listitem="@layout/connect_horizontal_image_row" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ivNext"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:src="@drawable/ic_indicator" />-->
+                <!--</RelativeLayout>-->
+                <com.luminous.cardslibrary.view.MaterialRecyclerView
+                    android:id="@+id/material_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/point_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/ponts_achieved_row" />
+
+
+                <LinearLayout
+                    android:id="@+id/report_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@drawable/gradient_tech_specs">
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Product"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Accepted"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Rejected"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Total"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="99dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Points"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_small" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:nestedScrollingEnabled="false"
+                                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                tools:itemCount="4"
+                                tools:listitem="@layout/slab_achieved_row" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <com.luminous.mpartner.custom_text_view.TextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:text="@string/download_full_report"
+                            android:textColor="@color/black_button"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ivPdf"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/pdf_icon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rejection_rate_comparison"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/card_rejection_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp"
+                        android:visibility="visible">
+
+                        <com.luminous.mpartner.custom_text_view.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Card Rejection Rate Comparison"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="#1f355c">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp">
+
+                                <ProgressBar
+                                    android:id="@+id/primary_progress_bar"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="15"
+                                    android:progressDrawable="@drawable/circular_yellow"
+                                    android:secondaryProgress="100"
+                                    android:textSize="18sp"/>
+
+                                <com.luminous.mpartner.custom_text_view.TextViewSemiBold
+                                    android:id="@+id/primary_progress_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="#Fec401"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    tools:text="25%"/>
+                            </RelativeLayout>
+
+                            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                android:id="@+id/country_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/primary_progress_bar"
+                                android:layout_gravity="center"
+                                android:text="India"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp">
+
+                                <ProgressBar
+                                    android:id="@+id/secondary_progress_bar"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="60"
+                                    android:progressDrawable="@drawable/circular_orange"
+                                    android:secondaryProgress="100"
+                                    />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewSemiBold
+                                    android:id="@+id/secondary_progress_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="#FF3d3e"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    tools:text="25%"/>
+
+                            </RelativeLayout>
+
+                            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                android:id="@+id/country_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/primary_progress_bar"
+                                android:layout_gravity="center"
+                                android:text="My"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/slabe_achieved_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/slabs_achieved_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp">
+
+                        <com.luminous.mpartner.custom_text_view.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Slabs Achieved"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_blue"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/view_100dp"
+                            android:layout_width="100dp"
+                            android:layout_height="0dp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="1000dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/llRewardSlab"
+                                    android:layout_width="1000dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="8dp"
+                                        android:layout_marginLeft="@dimen/padding_20"
+                                        android:layout_marginTop="36dp"
+                                        android:layout_marginRight="@dimen/padding_20"
+                                        android:layout_marginBottom="36dp"
+                                        android:background="@drawable/bg_slab_progress" />
+
+
+                                    <HorizontalScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+                                        <LinearLayout
+                                            android:id="@+id/view_group"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                        </LinearLayout>
+
+                                    </HorizontalScrollView>
+
+                                    <LinearLayout
+                                        android:layout_width="1000dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="20dp"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageButton
+                                            android:id="@+id/btn1"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon"
+
+                                            />
+
+
+                                        <ImageButton
+                                            android:id="@+id/btn2"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon" />
+
+
+                                        <ImageButton
+                                            android:id="@+id/btn3"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon"
+
+                                            />
+
+
+                                        <ImageButton
+                                            android:id="@+id/btn4"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon" />
+
+                                        <ImageButton
+                                            android:id="@+id/btn5"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon" />
+
+                                        <ImageButton
+                                            android:id="@+id/btn6"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon" />
+
+
+                                        <ImageButton
+                                            android:id="@+id/btn7"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="100dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/lock_icon" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/slabs_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:background="@color/white"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/connect_slab_achieved_row" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_get_assistance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Get Assist"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/gray_black"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/connects_terms_conditions"
+                    android:textColor="@color/gray_black"
+                    android:textSize="@dimen/text_size_normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

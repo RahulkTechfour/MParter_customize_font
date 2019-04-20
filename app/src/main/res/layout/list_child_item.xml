@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_1"
+        android:orientation="vertical">
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/answer"
+            android:textColor="@color/square_wave"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvAnswer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="sfuahsufi usf g ug uigdfui uig y yturgy  weutyuer yeruiy  uier uieryui tuyeui ty yuieytui uite ryer r yeruityuie ryerui eru uuier ter erytueru uiryue rru yeru yur uery r yeruiegdjkhdfhgjkdhfg jkfhg jkdhjkdfhgj hfhg jkjkhgjk djklf ghjk gdfhgdf dv df vjhdfjv "
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_blue"
+                android:gravity="center"
+                android:padding="17dp"
+                android:text="@string/contact_us"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/corporate_office"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                android:drawablePadding="3dp"
+                android:text="Plot No. 150, Sector 44, Gurgaon, Haryana - 122003"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                android:drawablePadding="3dp"
+                android:text="Tel: 18001033039"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                android:drawablePadding="3dp"
+                android:text="Sales Support: 18001030576"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                android:drawablePadding="3dp"
+                android:text="E-mail: care@luminousindia.com"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:hint="@string/name"
+                android:maxLines="1"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:hint="@string/email"
+                android:maxLines="1"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:gravity="top"
+                android:hint="@string/message"
+                android:lines="4"
+                android:maxLines="4"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_button_round_corner_bg"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

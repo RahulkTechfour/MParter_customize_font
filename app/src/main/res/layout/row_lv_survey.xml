@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/five_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingRight="@dimen/five_dp">
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/square_wave"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingTop="@dimen/padding_15"
+            android:paddingRight="@dimen/five_dp"
+            android:paddingBottom="@dimen/padding_15"
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>
+
+</layout>
+

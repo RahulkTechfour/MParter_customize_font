@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvSalesOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvOrderDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvProductCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvQty"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvNetPrice"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvNetValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvStatus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+    </LinearLayout>
+</layout>

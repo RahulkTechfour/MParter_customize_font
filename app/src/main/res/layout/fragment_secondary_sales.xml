@@ -1,0 +1,247 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_clr_light_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/tv_total_batt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginTop="1dp"
+                android:text="Batteries Products : 0"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/tv_total_home_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:text="Home UPS Products : 0"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/tv_total_solar_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:text="Solar Products : 0"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_border_solid_white"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="7dp">
+
+            <Spinner
+                android:id="@+id/spinner_allitems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/downarrow" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:background="@drawable/bg_submit"
+                android:layout_marginRight="2.5dp"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Reset"
+                android:layout_marginLeft="2.5dp"
+                android:background="@drawable/bg_reset"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/current_available_stock_report"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_curve_rect_orange"
+                android:drawableLeft="@drawable/downloadicon"
+                android:drawablePadding="@dimen/five_dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/download"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_data_found"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="visible"
+            />
+
+
+        <HorizontalScrollView
+            android:id="@+id/hs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:scrollbars="horizontal"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Product Category"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp"
+                        />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="SKU Model Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp"
+                        />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Available Quantity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="true"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/report_sec_sales_row" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/fragment_label"
+                layout="@layout/fragment_label" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily=""
+                android:drawableLeft="@drawable/location_arrow"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/phoneNo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/saleSupportNo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                android:id="@+id/email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:hint="Name*"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:hint="Email*"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/light_gray_round_corner_bg"
+                android:gravity="top"
+                android:hint="Message*"
+                android:imeOptions="actionDone"
+                android:lines="4"
+                android:maxLines="4"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/txt_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attach Image"
+                    android:drawableLeft="@drawable/attachment"
+                    android:drawablePadding="5dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/padding_20"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/blue_button_round_corner_bg_5dp"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

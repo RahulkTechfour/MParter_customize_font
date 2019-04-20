@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="Enter 6 Digit Alphanumeric Code"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.1"
+        android:alpha="1"
+        android:enabled="true"
+        android:hint="Enter Code"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/green_header_login"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvDealerCode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvDealerName"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp"
+            android:gravity="center"
+            />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomeS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvIBS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHkvaS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomePanelS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomeStabS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/sGrand"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomeA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvIBA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHkvaA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomePanelA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Home UPS"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHomeStabA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/aGrand"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Particulars"
+            android:textSize="@dimen/thirteen_sp" />
+
+
+
+    </LinearLayout>
+
+</layout>

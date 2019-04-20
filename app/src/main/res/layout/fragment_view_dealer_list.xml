@@ -1,0 +1,197 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_report_bg"
+        android:orientation="vertical"
+        tools:context="com.luminous.mpartner.dealer.ViewDealerListFragment">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@drawable/grey_border_solid_white"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingTop="11dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="11dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/from_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/calendericon"
+                    android:drawablePadding="5dp"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:text="01.02.2019 "
+                    android:textColor="@color/grey_500" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:text=" To "
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_500" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/to_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/calendericon"
+                    android:drawablePadding="5dp"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:text=" 01.03.2019"
+                    android:textColor="@color/grey_500" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="13dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="13dp"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spinner_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/downarrow" />
+        </RelativeLayout>
+
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Data Found"
+            android:textSize="@dimen/text_size_normal" />
+
+        <HorizontalScrollView
+            android:id="@+id/hs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/dealer_code"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/dealer_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/city"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/state"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/mobile_number"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/status"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/row_view_dealaer_list" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</layout>

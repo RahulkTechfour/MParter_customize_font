@@ -1,0 +1,249 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_clr_light_blue"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingTop="13dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="13dp">
+
+            <Spinner
+                android:id="@+id/sp_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/downarrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_submit"
+                android:text="Submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_reset"
+                android:text="Reset"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!--llPgTv-->
+        <LinearLayout
+            android:id="@+id/llPgTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvNoDataFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_data_found"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!--llReport-->
+        <LinearLayout
+            android:id="@+id/llReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/distributor_summary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_curve_rect_orange"
+                    android:drawableLeft="@drawable/downloadicon"
+                    android:drawablePadding="@dimen/five_dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/download"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:id="@+id/hs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dp"
+                android:scrollbars="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@color/colorPrimaryDark">
+
+                        <com.luminous.mpartner.custom_text_view.TextViewRegular
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Count"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/thirteen_sp" />
+
+                        <LinearLayout
+                            android:layout_width="450dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Particular"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/thirteen_sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="No of card Submitted"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/thirteen_sp" />
+
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="No of card Accepted"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/thirteen_sp" />
+
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Moved to Next WRS"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/thirteen_sp" />
+
+                                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="No of card Rejected"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/thirteen_sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:itemCount="4"
+                        tools:listitem="@layout/row_lv_dist_wr" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

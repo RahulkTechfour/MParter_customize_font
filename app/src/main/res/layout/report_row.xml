@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white">
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/inv_no"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="1876624562456234"
+            android:textColor="@color/grey_500" />
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:padding="10dp"
+            android:text="15-03-2019"
+            android:textColor="@color/grey_500" />
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_item_code"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:padding="10dp"
+            android:text="5426"
+            android:textColor="@color/grey_500" />
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_item"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:padding="10dp"
+            android:text="LUX"
+            android:textColor="@color/grey_500" />
+    </LinearLayout>
+</layout>

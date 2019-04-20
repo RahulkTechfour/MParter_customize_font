@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">MPartner</string>
+
+    <string name="luminous">LUMINOUS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="see_profile">See Profile</string>
+    <string name="pricelist">PriceList</string>
+    <string name="scheme">Scheme</string>
+    <string name="connect">Connect+</string>
+    <string name="catalog">Catalog</string>
+    <string name="gallery">Gallery</string>
+    <string name="load_calculator">Load Calculator</string>
+    <string name="product_service">Product Service</string>
+    <string name="faq">FAQ</string>
+    <string name="contest">Contest</string>
+    <string name="key_features">Key Features</string>
+    <string name="warranty">Warranty</string>
+    <string name="technical_specification">Technical Specification</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="inverlast">Inverlast</string>
+    <string name="electra">Electra</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="faqs">FAQs</string>
+    <string name="survey">Survey</string>
+    <string name="corporate_office">Corporate Office</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="answer">Answer</string>
+
+    <string name="inbt">INBT</string>
+    <string name="solar">SOLAR</string>
+    <string name="tvc">TVC</string>
+    <string name="product_video">PRODUCT VIDEO</string>
+    <string name="others">OTHERS</string>
+    <string name="price">Price</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="plot_no">Plot No. 150, Sector 44, Gurgaon, Haryana - 122003</string>
+    <string name="tel_no">Tel: 18001033039</string>
+    <string name="sales_support_no">Sales Support: 18001030576</string>
+    <string name="care_email">E-mail: care@luminousindia.com</string>
+
+    <string name="permission_msg">Please provide permission</string>
+    <string name="permission_denied_msg">permission denied</string>
+    <string name="download_full_report">Download Full Report</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="resend">Resend</string>
+    <string name="user_id">User ID</string>
+    <string name="my_profile">My Profile</string>
+    <string name="otp">OTP</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="title_activity_context_picture">ContextPicture</string>
+    <string name="title_activity_lucky_7">LUCKY 7</string>
+    <string name="activate_cards">Activate Cards</string>
+
+    <string name="check_your_gift">Check your gift</string>
+    <string name="reports">Reports</string>
+    <string name="scheme_info">Scheme Info</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="settings">Settings</string>
+    <string name="permission_denied_explanation">Location Permission required.</string>
+    <string name="permission_rationale">Permission Rationale</string>
+    <string name="Resend">Resend</string>
+
+    <string name="primary_report">Primary Report</string>
+    <string name="download">Download</string>
+    <string name="show_more">SHOW MORE</string>
+    <string name="secondary_dispatch_report">Secondary Dispatch Report</string>
+    <string name="secondary_sale_report">Secondary Sales Report</string>
+    <string name="current_available_stock_report">Current Available Stocks Report</string>
+    <string name="detail_statement">Detail Statement</string>
+    <string name="title_escalation_matrix">Escalation Matrix</string>
+    <string name="btn_create_new_dealer"> Create New Dealer</string>
+    <string name="btn_view_dealer"> View Dealer List</string>
+    <string name="dealer_name">Dealer Name</string>
+    <string name="dealer_code">Dealer Code</string>
+    <string name="city">City</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="state">State</string>
+    <string name="status">Status</string>
+    <string name="btn_create_sale_order">Create Sale Order</string>
+    <string name="btn_view_orders">View Order</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="select_language">Please select one of the following language.</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="distributor_summary">Distributor Summary</string>
+    <string name="dealer_wise_report">Dealer Wise Report</string>
+
+    <string name="dealer_terms_conditions">- This scheme is applicable from 16th April 2019 to 15th Aug 2019 for Pan India
+ \n- This scheme is applicable on purchase made by the dealer from authorized distributor \n-
+Eligible dealer can claim their gift from respective authorized distributor (Please note company is not responsible for scheme disbursement)
+ \n- Company reserve the right to amend/withdraw/discontinue/alter/the scheme without prior notice \n-
+In case of non-availability of specified gifts, company reserve all the rights to interchange the gift with another gift of equivalent value
+ \n- Scheme is not extended to HKVA UPS and Eco Watt 350
+ \n- In case of any dispute, dealer need to settle it with  respective distributors (company is not responsible for dispute settlement of dealers)
+ \n- Gold coupons can only be redeemed after the redemption of 7 normal Magical 7 cards.
+ \n- The Coupons are non-transferable</string>
+
+    <string name="distributor_terms_conditions">- This scheme is applicable from 1st April to 31st July for Pan India
+ \n- Distributor can activate their coupons from their M-partner
+ \n- Company reserve the right to amend/withdraw/discontinue/alter/the scheme without prior notice
+ \n- In case of non-availability of specified gifts, company reserve all the rights to interchange the gift with another gift of equivalent value
+ \n- Scheme is not extended to HKVA UPS and Eco Watt 350
+ \n- In case of any dispute, dealer need to settle it with  respective distributors (company is not responsible for dispute settlement of dealers)
+ \n- The coupons are not transferrable.
+ \n- The company reserves the right to amend/withdraw/discontinue/alter the scheme with any prior notice.
+ \n- Distributor can Activate coupons from 16th April 2019 to 15th Aug 2019
+ \n- 3 HUPS= 1 Battery and vice-versa will be consider for no of sets calculation
+ \n- Distributor can only claim reimbursement for Magical 7 cards as per his primary purchase in the scheme period. (1st April 2019 to 31st July 2019)</string>
+
+    <string name="connects_terms_conditions">1. Luminous Connect + program is for dealers and valid from 1st April 2019 to 30th September 2019. \n 2. Luminous Power Technologies Private Limited reserves the absolute right to withdraw/amend/discontinue/alter this program at any point of time.
+         \n 3. In case of any dispute the decision of the company shall be final and binding. All disputes are subject to Delhi jurisdiction only. \n 4. Battery, HUPS and Stabilizers must be sold and entered within 9 and 15 months respectively from the date of manufacturing \n 5. Panels and Stabilizers must be billed to Luminous after 30th September and 31st December, 2017 respectively.
+        \n 6. Company reserves all the rights to interchange the trip with any other trip of equivalent value.
+        \n 7. If eligible for foreign trip, the dealer and distributor has to arrange passport by their own Company is not responsible for the same. If partner cannot provide the passport then He/She is not eligible for the trip.
+        \n 8. All entries of customer is done through M-partner only
+        \n 9. All fields are mandatory, customer name, 10 digits Mobile number, address and sale date.
+        \n 10. All entries pertaining to this scheme must be done before 30th September 2019, 11:30 PM.
+        \n 11. Cross checking of customer details will be done on sample basis and found faulty then serial number with wrong details will not be considered for the scheme.
+        \n 12. Dealer cannot claim multiple gifts of lower slab based on point achieved. Disbursement will be done based on point utilization on descending order.
+        \n 13. Double negative marking will be done for all entries found with inaccurate customer details.</string>
+
+</resources>

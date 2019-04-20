@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/unlock_icon" />
+
+    <ImageView
+        android:id="@+id/iv_unlock"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/lock_icon" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@color/blue" />
+
+
+</LinearLayout>

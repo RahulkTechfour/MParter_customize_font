@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_primary_report">
+
+    <fragment
+        android:id="@+id/fragment_primary_report"
+        android:name="com.luminous.mpartner.reports.fragments.PrimaryReportFragment"
+        android:label="fragment_primary_report"
+        tools:layout="@layout/fragment_primary_report" />
+
+    <fragment
+        android:id="@+id/fragment_secondary_sales"
+        android:name="com.luminous.mpartner.reports.fragments.SecondarySalesFragment"
+        android:label="fragment_secondary_sales"
+        tools:layout="@layout/fragment_secondary_sales" />
+
+</navigation>

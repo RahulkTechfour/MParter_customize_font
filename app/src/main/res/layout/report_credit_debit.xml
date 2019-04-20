@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_doc_no"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_posting_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_doc_type"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_local_curr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_assignment_number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tv_item_txt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/thirteen_sp" />
+
+    </LinearLayout>
+
+</layout>

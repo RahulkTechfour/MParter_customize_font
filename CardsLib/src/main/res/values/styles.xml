@@ -1,0 +1,49 @@
+<resources>
+    <!-- ######################################################## -->
+    <!-- #                        Image                         # -->
+    <!-- ######################################################## -->
+
+
+    <!-- ######################################################## -->
+    <!-- #                        Title                         # -->
+    <!-- ######################################################## -->
+
+    <style name="Material_Card_Title" parent="Material_Headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- ######################################################## -->
+    <!-- #                      Subtitle                        # -->
+    <!-- ######################################################## -->
+
+
+
+
+    <!-- ######################################################## -->
+    <!-- #                    Supporting Text                   # -->
+    <!-- ######################################################## -->
+
+    <!-- Should be used if there are no actions -->
+
+    <!-- Should be used if there are additional actions or supporting text -->
+
+
+    <!-- ######################################################## -->
+    <!-- #                        Others                        # -->
+    <!-- ######################################################## -->
+
+    <style name="MainLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+</resources>

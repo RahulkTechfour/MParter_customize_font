@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Behraich Service Center"
+            android:layout_marginLeft="@dimen/fourteen_sp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+            android:id="@+id/tvServiceIncharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Incharge: Ram Charan Shukla"/>-->
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourteen_sp"
+            android:paddingTop="5dp"
+            android:text="" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourteen_sp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:text="Phone: " />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourteen_sp"
+            android:paddingTop="5dp"
+            android:text="Email: "
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</layout>

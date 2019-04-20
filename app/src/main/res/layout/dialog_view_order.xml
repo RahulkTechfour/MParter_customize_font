@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/llPreOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@color/light_blue_report_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_20"
+        android:visibility="visible">
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Previous Orders"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvFromToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/light_blue_report_bg"
+            android:text=""
+            android:textColor="@color/text_blue_color"
+            android:textSize="14sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Sales Order"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Order Date"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Product Code"
+                        android:textSize="@dimen/thirteen_sp" />
+
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Qty"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Net Price"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Net Price"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Status"
+                        android:textSize="@dimen/thirteen_sp" />
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/row_rv_view_sales_order" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</layout>

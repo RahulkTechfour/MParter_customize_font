@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal">
+
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:id="@+id/tv_barcode"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Barcode"
+        android:textColor="@android:color/white" />
+
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:id="@+id/tv_secret_code"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Alphanumeric Code"
+        android:textColor="@android:color/white" />
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:id="@+id/tv_gift"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Gift"
+        android:textColor="@android:color/white" />
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:id="@+id/tv_distributor_name"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Distributor Name"
+        android:textColor="@android:color/white" />
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:id="@+id/tv_ReimbursmentDate_Time"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Reimbursement Date and Time"
+        android:textColor="@android:color/white" />
+</LinearLayout>

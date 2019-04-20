@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--By Anusha 04/07/2018 TASK#4009-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.luminous.mpartner.custom_text_view.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:text="Choose From : "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#2e2b2b"
+            android:layout_marginBottom="10dp"
+            android:text="View Type : "/>-->
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:id="@+id/tvpdf"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/pdf"
+            android:text="Document"/>
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:id="@+id/gallery"
+            android:gravity="center"
+            android:drawablePadding="16dp"
+            android:drawableTop="@drawable/picture"
+            android:text="Gallery"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_dealer_name"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Dealer\nName"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/tv_dealer_code"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:text="Dealer\nCode"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/tv_coupon_number"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:text="Coupon 6\nDigit number"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_gift_value"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:text="Gift Value"
+        android:padding="3dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_activation_date"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Activation\nDate &amp; time"
+        android:textColor="@android:color/white" />
+
+  <TextView
+      android:padding="3dp"
+      android:id="@+id/tv_redemption_date"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/text_color_profile_grey"
+        android:gravity="center"
+        android:text="Redemption\non Date &amp; time"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

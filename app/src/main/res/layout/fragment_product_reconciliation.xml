@@ -1,0 +1,213 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_clr_light_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:background="@drawable/bg_curve_rect_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtSerialNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border_solid_white"
+                android:drawableLeft="@drawable/search"
+                android:drawableTint="@color/black"
+                android:drawablePadding="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center|left"
+                android:hint="Serial Number"
+                android:imeOptions="actionGo"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_submit"
+                android:text="Submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_reset"
+                android:text="Reset"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.luminous.mpartner.custom_text_view.TextViewRegular
+            android:id="@+id/tvNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_data_found"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llPRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ten_dp"
+                android:visibility="gone">
+
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/ten_dp"
+                    android:text="Primary"
+                    android:textColor="@color/white" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_product_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Product Type :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_model_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Model Name :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_pc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Primary Customer :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_pbd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Billing Date :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/ten_dp"
+                    android:text="Secondary"
+                    android:textColor="@color/white" />
+
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_s_dealer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Dealer Name :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_sbd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Billing Date :" />
+
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/ten_dp"
+                    android:text="Tertiary"
+                    android:textColor="@color/white" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_t_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Customer Name :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_t_c_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Customer Number :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_t_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tertiary Date :" />
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="City :" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</layout>

@@ -1,0 +1,452 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.luminous.mpartner.dealer.CreateDealerFirmAddressDeatailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_clr_light_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/create_new_dealer" />
+
+
+            <!--Firm Details LL-->
+            <LinearLayout
+                android:id="@+id/llFirmDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_clr_light_blue"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="visible">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_create_new_dealer_header"
+                    android:padding="@dimen/padding_20"
+                    android:text="Create New Dealer"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_create_dealer_footer"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_20">
+
+
+                    <com.luminous.mpartner.custom_text_view.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firm Details"
+                        android:textColor="#414D91"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilFirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line">
+
+                        <EditText
+                            android:id="@+id/txtDealerFirmName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:layout_below="@+id/txt"
+                            android:background="@android:color/transparent"
+                            android:hint="Dealer Firm Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:id="@+id/tilDealerName"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:background="@drawable/bg_edt_hor_line">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtDealerName2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/txtDealerFirmName"-->
+                            <!--android:background="@android:color/transparent"-->
+                            <!--android:hint="Dealer Name"-->
+                            <!--android:inputType="text"-->
+                            <!--android:singleLine="true"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textColor="#000000"-->
+                            <!--android:textColorHint="@color/grayDark"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:paddingBottom="5dp"-->
+                            <!--/>-->
+
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilOwnerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line">
+
+                        <EditText
+                            android:id="@+id/txtOwnerName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDealerName"
+                            android:background="@android:color/transparent"
+                            android:hint="Owner Name"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line">
+
+                        <EditText
+                            android:id="@+id/txtMobNo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel_sp3"
+                            android:background="@android:color/transparent"
+                            android:hint="Mobile No"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilTelephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line">
+
+                        <EditText
+                            android:id="@+id/txtTelePhoneNo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtMobNo"
+                            android:background="@android:color/transparent"
+                            android:hint="Telephone No"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line"
+                        >
+
+                        <EditText
+                            android:id="@+id/txtEmailId2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtTelePhoneNo"
+                            android:hint="Email Id"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:paddingTop="5dp"
+                            android:textColor="#000000"
+                            android:background="@android:color/transparent"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--Address Details LL-->
+            <LinearLayout
+                android:id="@+id/llAddressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_clr_light_blue"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+                android:visibility="gone">
+
+                <com.luminous.mpartner.custom_text_view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_create_new_dealer_header"
+                    android:padding="@dimen/padding_20"
+                    android:text="Create New Dealer"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_create_dealer_footer"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_20">
+
+
+                    <com.luminous.mpartner.custom_text_view.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address Details"
+                        android:textColor="#414D91"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line"
+                        >
+
+                        <EditText
+                            android:id="@+id/txtAddressFirst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtOwnerName"
+                            android:layout_marginTop="16dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|left"
+                            android:hint="Address1"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edt_hor_line"
+                        >
+
+                        <EditText
+                            android:id="@+id/txtAddressSecond"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtAddressFirst"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bg_edt_hor_line"
+                            android:gravity="top|left"
+                            android:hint="Address2"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                        <Spinner
+                            android:id="@+id/spState"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:textColor="@color/grayDark"
+                            android:alpha="0.5"
+                            android:layout_below="@+id/txtAddressSecond"/>
+
+                        <Spinner
+                            android:id="@+id/spCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:textColor="@color/grayDark"
+                            android:alpha="0.5"
+                            android:layout_below="@+id/rel_sp1"/>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_edt_hor_line"
+                        >
+
+                        <EditText
+                            android:id="@+id/txtPostalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel_sp2"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bg_edt_hor_line"
+                            android:hint="Postal Code"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/grayDark"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                        <Spinner
+                            android:id="@+id/spCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/txtPostalCode"
+                            android:textColor="@color/grayDark"
+                            android:alpha="0.5"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue_report_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_20">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@drawable/bg_button_gray_medium"
+                    android:text="back"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@drawable/bg_button_dark_blue"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@drawable/bg_button_dark_blue"
+                    android:text="Next"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_gray_medium"
+                    android:text="cancel"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

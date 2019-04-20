@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginRight="60dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/rel_firm_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <com.luminous.mpartner.custom_text_view.TextViewBold
+                                android:id="@+id/tvFirmName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="Firm Name"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+
+                            <com.luminous.mpartner.custom_text_view.TextViewRegular
+                                android:id="@+id/tvSeeProfile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.8"
+                                android:gravity="right"
+                                android:text="@string/see_profile"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+
+
+                        <com.luminous.mpartner.custom_text_view.TextViewRegular
+                            android:id="@+id/tvSapCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:ellipsize="end"
+                            android:text="SAP Code"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/rel_firm_name">
+
+
+
+                        <com.luminous.mpartner.custom_text_view.TextViewRegular
+                            android:id="@+id/tv_change_language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Change Language"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/navDrawerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/nav_drawer_row_item" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_pricelist"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="@string/pricelist"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_scheme"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="@string/scheme"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_connect"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/connect"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_catalog"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/catalog"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_gallery"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/gallery"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_calculator"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/load_calculator"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_product_service"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/product_service"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_faq"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/faq"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_contest"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="@string/contest"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/divider_blue" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/nav_contact_us"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="11dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@android:drawable/ic_menu_save" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="@string/contact_us"-->
+                <!--android:textColor="@color/text_blue_color" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

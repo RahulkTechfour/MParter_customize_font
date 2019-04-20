@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:elevation="6dp" />
+
+    <ScrollView
+        android:id="@+id/entry"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/textview_label_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Serial Number"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/fragment_entry_et_srno"
+                    style="@style/edit_text_with_left_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:hint="Serial Number"
+                    android:imeOptions="actionGo" />
+
+                <ImageView
+                    android:id="@+id/imgScanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openScanner"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingRight="@dimen/padding_15"
+                    android:src="@drawable/qr_code" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:layout_marginRight="@dimen/padding_20"
+                android:background="@color/grey_300" />
+
+            <LinearLayout
+                android:id="@+id/fragment_entry_ll_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/fragment_entry_tv_dealer"
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Spinner
+                        android:id="@+id/fragment_entry_sp_dealer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/fragment_entry_tv_dealer_address"
+                    style="@style/textview_label_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Sale Date"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/fragment_entry_tv_sale_date"
+                        style="@style/edit_text_with_left_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Sale Date" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Customer Name"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/fragment_entry_et_name"
+                        style="@style/edit_text_with_left_icon"
+                        android:layout_width="0dp"
+                        android:inputType="textPersonName"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:hint="Customer Name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:inputType="phone"
+                        android:text="Customer Phone"
+                        android:textColor="@color/colorPrimary" />
+                    <!--Changed InputType by Anusha 25/06/2018 TASK#3967-->
+                    <EditText
+                        android:id="@+id/fragment_entry_et_phone"
+                        style="@style/edit_text_with_left_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:hint="Customer Phone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:digits="0123456789"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:inputType="phone"
+                        android:text="Customer Landline"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/fragment_entry_et_landline"
+                        style="@style/edit_text_with_left_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:maxLength="10"
+                        android:hint="Customer Landline"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Customer Address"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/fragment_entry_et_address"
+                        style="@style/edit_text_with_left_icon"
+                        android:layout_width="0dp"
+                        android:digits="+$,!-#$%'()*-.:;+$0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:hint="Address" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Customer State"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Spinner
+                        android:id="@+id/fragment_entry_sp_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Customer City"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Spinner
+                        android:id="@+id/fragment_entry_sp_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/llUploadPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/UploadLabel"
+                        style="@style/textview_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Upload Pic"
+                        android:visibility="visible"
+                        android:textColor="@color/colorPrimary" />
+
+
+
+                    <EditText
+                        android:id="@+id/uploadPic"
+                        style="@style/edit_text_with_left_icon"
+                        android:editable="false"
+                        android:layout_width="0dp"
+                        android:focusableInTouchMode="false"
+                        android:visibility="visible"
+                        android:hint="Upload Pic"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@color/grey_300" />
+
+
+                <Button
+                    android:id="@+id/fragment_entry_bt_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_bg"
+                    android:padding="@dimen/padding_20"
+                    android:textAllCaps="false"
+                    android:text="Submit+"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Assist Part by Anusha 26/06/2018 TASK#4009 updated on 04/07/2018-->
+    <RelativeLayout
+        android:id="@+id/llAssist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Month:"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:onClick="selectDate" />
+
+            <TextView
+                android:id="@+id/tvmonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="MM/YYYY"
+                android:gravity="right|center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:drawableRight="@drawable/icon_calendar"
+                android:drawablePadding="5dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:onClick="selectDate" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCreate"
+            android:layout_below="@+id/llDate">
+
+            <LinearLayout
+                android:id="@+id/llTicList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Get Assistance"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:onClick="createNew"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/schemeStatus"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/textview_label_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:hint="Scheme Name: " />
+
+                <Spinner
+                    android:id="@+id/fragment_reports_sp_schemes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:layout_marginRight="@dimen/padding_20"
+                android:background="@color/grey_300" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:background="#ffffff">
+
+
+                <!-- Row 1 with single column -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Slabs"
+                        android:layout_weight="1"
+                        android:padding="20dip"
+                        android:background="#dcdcdc"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Gifts"
+                        android:layout_weight="1"
+                        android:padding="20dip"
+                        android:background="#dcdcdc"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="My Status"
+                        android:layout_weight="1"
+                        android:padding="20dip"
+                        android:background="#dcdcdc"
+                        android:textColor="#000"/>
+
+
+                </TableRow>
+
+                <!-- Row 2 with 3 columns -->
+
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="0-100"
+                        android:layout_weight="1"
+                        android:background="#dcdcdc"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#cac9c9"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <!-- Row 3 with 2 columns -->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="101-200"
+                        android:layout_weight="1"
+                        android:background="#dcdcdc"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#cac9c9"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="201-300"
+                        android:layout_weight="1"
+                        android:background="#dcdcdc"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#cac9c9"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="301-400"
+                        android:layout_weight="1"
+                        android:background="#dcdcdc"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#cac9c9"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="401-500"
+                        android:layout_weight="1"
+                        android:background="#dcdcdc"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_weight="1"
+                        android:background="#cac9c9"
+                        android:textColor="#000000"
+                        android:padding="20dip"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Points Earned"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="350"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Points Redeemed"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="100"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        app:tabTextAppearance="@style/MyCustomTextAppearanceTab"
+        app:tabMaxWidth="0dp"
+        android:background="@color/login_button_color"
+        app:tabTextColor="@color/bullet"
+        app:tabSelectedTextColor="@color/white"
+        app:tabGravity="fill"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:gravity="center"
+        android:background="@drawable/gradient_tech_specs"
+        android:orientation="horizontal" />
+</LinearLayout>

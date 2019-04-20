@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_blue_color">#214098</color>
+    <color name="divider_blue">#214098</color>
+    <color name="tab_blue">#558bf7</color>
+    <color name="app_bg_with_card">#FFFFFF</color>
+    <color name="gray_black">#5B5C5C</color>
+    <color name="light_gray">#80C0C0C0</color>
+    <color name="light_blue">#ADD8E6</color>
+
+   <!-- <color name="colorPrimary">#10529F</color>-->
+    <color name="colorPrimary">#214098</color>
+
+    <color name="colorPrimaryDark">#055794</color>
+    <color name="colorAccent">#062F83</color>
+    <color name="semitransparent">#96000000</color>
+    <color name="screen_background">#f6f7f8</color>
+    <color name="text_color_profile_grey">#7b7b7c</color>
+    <color name="text_color_entry">#5B5C5C</color>
+
+    <color name="grey_100">#EFEFEF</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#EEEEEE</color>
+
+    <color name="header_color">#183883</color>
+    <color name="bottom_line_color">#192C65</color>
+    <color name="login_button_bg">#10529F</color>
+    <color name="text_color_blue">#011554</color>
+
+    <color name="login_button_color">#2A344D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_selected">#3A7181</color>
+    <color name="bullet">#0EC1CC</color>
+    <color name="button_color">#055794</color>
+
+    <color name="gray_1">#E4E4E4</color>
+    <color name="gray_border">#595959</color>
+    <color name="gray_2">#D9D9D9</color>
+    <color name="black">#ff000000</color>
+
+    <color name="yellow">#F7CA18</color>
+    <color name="blue">#1FA1E4</color>
+
+    <color name="reddish_orange">#DC3023</color>
+    <color name="green_header_login">#10529F</color>
+
+    <color name="green_catalog_item">#87ffc6</color>
+    <color name="blue_catalog_item">#6BBdFF</color>
+    <color name="red">#B22222</color>
+    <color name="grayDark">#A9A9A9</color>
+    <color name="light_blue_report_bg">#E0EFF4</color>
+
+    <color name="bg_clr_light_blue">#dfeff4</color>
+    <color name="gray_escalation_frag">#F6F6F6</color>
+
+    <color name="square_wave">#548bf7</color>
+
+</resources>

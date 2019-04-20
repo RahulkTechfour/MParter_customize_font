@@ -1,0 +1,164 @@
+{
+  "Message": "Data  fetched successfully.",
+  "Status": "200",
+  "dynamic_home_page": [
+    {
+      "name": "home_one_image_card_provider",
+      "class_name": "OneImageCardProvider",
+      "card_action": "Media",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "",
+      "title_color": "",
+      "sub_title": "",
+      "subtitle_color": "",
+      "card_data": null,
+      "Bannercard_data": null,
+      "action1_color": "",
+      "action1_text": "",
+      "subcategory": ""
+    },
+    {
+      "name": "home_scheme_header_card_provider",
+      "class_name": "home_SchemeHeaderCardProvider",
+      "card_action": "",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "CURRENT SCHEMES",
+      "title_color": "#FFFFFF",
+      "sub_title": "Lucky Draw",
+      "subtitle_color": "#FFFFFF",
+      "card_data": null,
+      "Bannercard_data": null,
+      "action1_color": "",
+      "action1_text": "",
+      "subcategory": ""
+    },
+    {
+      "name": "home_Scheme_main_card_provider",
+      "class_name": "home_SchemeMainCardProvider",
+      "card_action": "Scheme",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "",
+      "title_color": "",
+      "sub_title": "",
+      "subtitle_color": "",
+      "card_data": null,
+      "Bannercard_data": null,
+      "action1_color": "",
+      "action1_text": "",
+      "subcategory": ""
+    },
+    {
+      "name": "home_grid_card_provider",
+      "class_name": "GridCardProvider",
+      "card_action": "",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "",
+      "title_color": "#FFFFFF",
+      "sub_title": "",
+      "subtitle_color": "",
+      "card_data": [
+        {
+          "title": "Panel",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "card_action": "GridDeeplink1",
+          "image_height": "",
+          "image_width": ""
+        },
+        {
+          "title": "PCU",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "card_action": "GridDeeplink2",
+          "image_height": "",
+          "image_width": ""
+        },
+        {
+          "title": "Combo",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "card_action": "GridDeeplink3",
+          "image_height": "",
+          "image_width": ""
+        },
+        {
+          "title": "Retrofit",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "card_action": "GridDeeplink4",
+          "image_height": "",
+          "image_width": ""
+        }
+      ],
+      "Bannercard_data": null,
+      "action1_color": "",
+      "action1_text": "",
+      "subcategory": ""
+    },
+    {
+      "name": "home_more_card_provider",
+      "class_name": "KnowMoreCardProvider",
+      "card_action": "KnowMore",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "",
+      "title_color": "",
+      "sub_title": "",
+      "subtitle_color": "",
+      "card_data": null,
+      "Bannercard_data": null,
+      "action1_color": "#FFFFFF",
+      "action1_text": "KNOW MORE",
+      "subcategory": ""
+    },
+    {
+      "name": "home_banner_header_card_provider",
+      "class_name": "BannerHeaderCardProvider",
+      "card_action": "",
+      "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+      "image_height": "",
+      "image_width": "",
+      "main_image": "",
+      "title": "",
+      "title_color": "",
+      "sub_title": "",
+      "subtitle_color": "",
+      "card_data": null,
+      "Bannercard_data": [
+        {
+          "title": "",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "",
+          "card_action": "BannerDeeplink1",
+          "image_height": "",
+          "image_width": ""
+        },
+        {
+          "title": "",
+          "background_image": "http://166.62.100.102/MpartnerNewApi/CardImage/gridDefault400.png",
+          "main_image": "",
+          "card_action": "BannerDeeplink2",
+          "image_height": "",
+          "image_width": ""
+        }
+      ],
+      "action1_color": "",
+      "action1_text": "",
+      "subcategory": ""
+    }
+  ]
+}
