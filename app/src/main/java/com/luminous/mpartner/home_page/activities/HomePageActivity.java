@@ -85,6 +85,7 @@ import com.luminous.mpartner.utilities.SharedPrefsManager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -118,7 +119,6 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
         apiInterface = RetrofitClient.getInstance().create(RetrofitInterface.class);
         sharedPrefsManager = new SharedPrefsManager(this);
         profileEntity = (ProfileEntity) sharedPrefsManager.getObject(SharedPreferenceKeys.USER_DATA, ProfileEntity.class);
-
         initToolbar();
         setDrawer();
         initViews();
@@ -153,7 +153,6 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
 
         if (CommonUtility.isNewVersionAvailable(this))
             CommonUtility.showUpdateDialog(this);
-
 
     }
 

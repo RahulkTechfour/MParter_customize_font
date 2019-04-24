@@ -40,6 +40,7 @@ import com.luminous.mpartner.databinding.DialogAlertNotificationBinding;
 import com.luminous.mpartner.databinding.FragmentHomePageBinding;
 import com.luminous.mpartner.dynamic_home.entities.HomeCardEntity;
 import com.luminous.mpartner.dynamic_home.entities.HomeData;
+import com.luminous.mpartner.dynamic_home.providers.BannerHeaderCardProvider;
 import com.luminous.mpartner.dynamic_home.utils.HomeCardUtils;
 import com.luminous.mpartner.events.HomePageVisibleEvent;
 import com.luminous.mpartner.network.RetrofitClient;
@@ -413,6 +414,7 @@ public class HomePageFragment extends Fragment implements SwipeRefreshLayout.OnR
     public void onRefresh() {
         if (CommonUtility.isNetworkAvailable(context)) {
             binding.swipeContainer.setRefreshing(true);
+            BannerHeaderCardProvider.stopTimer();
             getHomePageData();
         } else {
             binding.swipeContainer.setRefreshing(false);

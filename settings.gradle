@@ -1,0 +1,3 @@
+include ':app', ':CardsLib'
+include ':viewpager_indicator'
+include ':myScannerLibrary'
